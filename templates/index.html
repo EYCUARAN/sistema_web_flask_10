@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-light py-5 text-center">
+    <div class="container">
+        <h2 >Bienvenido a Mi Sitio Flask</h2>
+        <p class="lead mb-4">Esta es la página de inicio de nuestro sitio web construido con Flask.</p>
+        <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg me-2">Conoce más</a>
+        <a href="{{ url_for('contact') }}" class="btn btn-success btn-lg">Contáctanos</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Características</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Rápido</h3>
+                        <p class="card-text">Nuestro sitio está optimizado para una carga rápida.</p>
+                        <a href="#" class="btn btn-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Moderno</h3>
+                        <p class="card-text">Diseño contemporáneo con las últimas tendencias web.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Responsivo</h3>
+                        <p class="card-text">Se adapta perfectamente a cualquier dispositivo.</p>
+                        <a href="#" class="btn btn-info">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Acerca{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h1 class="display-4 text-center mb-4">Acerca de Nosotros</h1>
+        <p class="lead text-center mb-5">Este sitio web fue creado como ejemplo de cómo estructurar un proyecto Flask con plantillas.</p>
+        
+        <div class="mb-5">
+            <h2 class="h3 mb-3">Nuestra Misión</h2>
+            <p>Proveer ejemplos claros y concisos para ayudar a desarrolladores a aprender Flask.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-success">Únete a nosotros</a>
+        </div>
+        
+        <div>
+            <h2 class="h3 mb-3">Tecnologías Utilizadas</h2>
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><strong>Flask:</strong> Framework web de Python</li>
+                <li class="list-group-item"><strong>HTML5:</strong> Estructura de las páginas</li>
+                <li class="list-group-item"><strong>CSS3:</strong> Estilos y diseño</li>
+                <li class="list-group-item"><strong>Jinja2:</strong> Motor de plantillas</li>
+            </ul>
+            <a href="#" class="btn btn-primary me-2">Aprende más</a>
+            <a href="#" class="btn btn-warning">Documentación</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
